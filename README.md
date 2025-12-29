@@ -74,7 +74,7 @@ Result: Foundational ranks first despite lower raw similarity
 
 ## Run the Benchmarks
 ```bash
-git clone https://github.com/YOUR_USERNAME/mutatis-public.git
+git clone https://github.com/ScooterMageee/mutatis-public.git
 cd mutatis-public/benchmarks
 
 pip install -r requirements.txt
@@ -140,4 +140,4 @@ MIT
 
 ## Contact
 
-[Your preferred contact method]
+tickertrend@outlook.com
