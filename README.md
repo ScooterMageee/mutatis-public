@@ -58,16 +58,18 @@ The 88% memory reduction isn't just a cost savings — it's what makes **true lo
 
 ---
 
-## The √2 Gravity Constant
+## The $\sqrt{2}$ Gravity Constant
 
-In normalized vector space, orthogonal unit vectors are separated by Euclidean distance √2 (~1.414).
+In normalized vector space, orthogonal unit vectors are separated by Euclidean distance $\sqrt{2}$ (~$1.414$). 
 
 By applying this multiplier to foundational memories, we create a mathematical floor — ensuring they always outrank transient data, regardless of surface-level similarity.
-```
-Transient:    "I ate toast"                → 0.90 similarity × 0.5 penalty = 0.45 final
-Foundational: "I believe in self-ownership" → 0.65 similarity × 1.414 boost = 0.92 final
 
-Result: Foundational ranks first despite lower raw similarity
+**Live Proof Results:**
+```
+Transient:    "I ate toast"                → 0.90 similarity × 0.50 penalty = 0.4500
+Foundational: "I believe in self-ownership" → 0.65 similarity × 1.414 boost = 0.9192
+
+Result: Foundational ranks first (0.9192 > 0.4500)
 ```
 
 ---
@@ -77,12 +79,17 @@ Result: Foundational ranks first despite lower raw similarity
 git clone https://github.com/ScooterMageee/mutatis-public.git
 cd mutatis-public
 
+# Install dependencies
 pip install -r requirements.txt
 
-python run_benchmark.py      # Latency test
-python run_compliance.py     # IEEE 754 precision verification
-python run_memory.py         # Memory footprint analysis
-python run_throughput.py     # Queries per second
+# Run Python performance tests
+python run_benchmark.py      # Latency (~200x)
+python run_compliance.py     # IEEE 754 Precision
+python run_memory.py         # Memory Footprint (~88%)
+python run_throughput.py     # QPS (~210x)
+
+# Run TypeScript Proof
+npx tsx verify_gravity.ts    # Gravity Constant Proof
 ```
 
 ---
@@ -95,7 +102,7 @@ Four core subsystems (patent pending):
 |-----------|---------|
 | **Schema Evolution Engine** | Runtime DDL mutation triggered by confidence thresholds |
 | **Memory Hygiene** | Tiered classification (transient → episodic → foundational) |
-| **√2 Gravity Weighting** | Mathematical guarantee that foundational memories outrank noise |
+| **$\sqrt{2}$ Gravity Weighting** | Mathematical guarantee that foundational memories outrank noise |
 | **Guardian Architecture** | Multi-modal duress detection — protects data under coercion |
 
 ---
@@ -108,18 +115,6 @@ Four core subsystems (patent pending):
 | **Self-Hosted** | Enterprise deployment, full control, air-gapped environments |
 | **Cloud** | Scalable infrastructure when you choose to use it |
 
-Same core. Your choice where it runs.
-
----
-
-## Use Cases
-
-- **Personal AI** — A companion that remembers you, running on your hardware
-- **Healthcare** — HIPAA-compliant, on-premise patient memory
-- **Legal** — Attorney-client privilege protected by architecture, not policy
-- **Finance** — Fraud-resistant, duress-aware personal banking AI
-- **Gaming** — NPCs with persistent memory (fits 16ms frame budget at 60fps)
-
 ---
 
 ## About
@@ -127,14 +122,6 @@ Same core. Your choice where it runs.
 Built over 9 months of nights and weekends by a datacenter engineer in Abilene, TX.
 
 Privacy isn't a feature. It's the foundation.
-
-Looking for technical feedback and design partners.
-
----
-
-## License
-
-MIT
 
 ---
 
