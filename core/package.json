@@ -1,0 +1,21 @@
+{
+  "name": "mutatis-poc",
+  "version": "1.0.0",
+  "description": "Proof of concept for Mutatis neuroplastic AI memory system",
+  "main": "dist/main.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/main.js",
+    "demo": "node dist/demo.js",
+    "dev": "ts-node src/demo.ts"
+  },
+  "dependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^25.0.3",
+    "better-sqlite3": "^12.5.0"
+  },
+  "devDependencies": {
+    "ts-node": "^10.9.0",
+    "typescript": "^5.3.0"
+  }
+}
